@@ -51,7 +51,7 @@ const loadItemHasil = (data) => {
 
 /* load components */
 // load navbar
-lazyLoad('../NavBar.html', setNavBar);
+lazyLoad('../components/NavBar.html', setNavBar);
 // load pencarian
 lazyLoad('../components/PencarianItem.html', setPencarian);
 // load saring

@@ -74,7 +74,7 @@ const loadPemesananInfo = ({
 
 /* load components */
 // load navbar
-lazyLoad('../NavBar.html', setNavBar);
+lazyLoad('../components/NavBar.html', setNavBar);
 
 const ticketData = getTicketData();
 if (ticketData.isFound !== false) {
