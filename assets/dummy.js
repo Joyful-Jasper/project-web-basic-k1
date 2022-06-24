@@ -1,0 +1,50 @@
+const itemData = [
+  {
+    id: 'booking-abcd123',
+    logoMaskapai: 'https://placekitten.com/24/24',
+    nameMaskapai: 'Lorem Ipsum',
+    fromName: 'Jakarta',
+    fromNameCode: 'JKTA',
+    fromCode: 'CBA',
+    fromTime: '15:00',
+    estTime: '1h 11m',
+    transferCount: 'Langsung',
+    destName: 'Surabaya',
+    destNameCode: 'SUB',
+    destCode: 'ZYX',
+    destTime: '21:00',
+    date: 'Rabu, 22 Juni 2022',
+    passenger: {
+      adult: 1,
+      child: 1,
+      infant: 1,
+    },
+    seatClass: 'Ekonomi',
+    pricePerTix: 'Rp. 123.456/org',
+  },
+  {
+    id: 'booking-xyz987',
+    logoMaskapai: 'https://placekitten.com/24/24',
+    nameMaskapai: 'Lorem Ipsum',
+    fromName: 'Bandung',
+    fromNameCode: 'BDG',
+    fromCode: 'CBA',
+    fromTime: '10:00',
+    estTime: '1h 21m',
+    transferCount: 'Langsung',
+    destName: 'Malang',
+    destNameCode: 'MLG',
+    destCode: 'ZYX',
+    destTime: '12:21',
+    date: 'Kamis, 23 Juni 2022',
+    passenger: {
+      adult: 1,
+      child: 0,
+      infant: 0,
+    },
+    seatClass: 'Ekonomi',
+    pricePerTix: 'Rp. 100.900/org',
+  }
+];
+
+export { itemData };
