@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+  </head>
+  <body>
+    <!-- navbar start -->
+    <section id="navbar">
+      <nav class="navbar navbar-expand-lg shadow-sm text-bg-info p-3">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+            <a class="navbar-brand align-middle mx-2" href="#">
+              <img src="./gambar/large_fligght.png" width="150" height="40" alt="brand-logo" class="d-inline-block align-text-top rounded float-start" />
+              <span class="fw-semibold mx-2">flighsy</span>
+            </a>
+            <div class="navbar-nav mr-auto mb-2 mb-lg-0">
+              <div class="nav-item">
+                <a class="nav-link mx-2" href="#">About Us</a>
+              </div>
+              <div class="nav-item">
+                <a class="nav-link mx-2" href="#">Contact Us</a>
+              </div>
+              <div class="nav-item mx-2">
+                <button onclick="logout()" type="button" class="btn btn-primary" style="background-color: rgb(45, 163, 193)">Logout</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!-- navbar end -->
+    <!--formulir-->
+    <div class="container mt-5 pt-5">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 py-5 px-5 shadow" style="background-color: #d7f7fb; background-image: linear-gradient(white, rgb(172, 225, 246))">
+            <div class="row">
+              <div class="col-6">
+                <div class="row mb-3">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="berangkat" />
+                    <label class="form-check-label" for="flexRadioDefault1"> Keberangkatan </label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col mb-3">
+                    <label for="validationCustom04" class="form-label">Dari</label>
+                    <select class="form-select" id="kotaAsal" aria-label="Default select example">
+                      <option selected>kota asal</option>
+                      <option value="Jakarta">Jakarta</option>
+                      <option value="Bandung">Bandung</option>
+                      <option value="Solo">Solo</option>
+                      <option value="yogjakarta">yogjakarta</option>
+                      <option value="Bali">Bali</option>
+                      <option value="Palembang">Palembang</option>
+                    </select>
+                  </div>
+                  <div class="col mb-3">
+                    <label for="validationCustom04" class="form-label">Ke</label>
+                    <select class="form-select" id="tujuan" aria-label="Default select example">
+                      <option selected>kota tujuan</option>
+                      <option value="Jakarta">Jakarta</option>
+                      <option value="Bandung">Bandung</option>
+                      <option value="Solo">Solo</option>
+                      <option value="yogjakarta">yogjakarta</option>
+                      <option value="Bali">Bali</option>
+                      <option value="Palembang">Palembang</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col mb-3">
+                  <label for="exampletanggal" class="form-label">Tanggal Pergi</label>
+                  <input type="date" id="tanggalPergi" class="form-control" />
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="col mb-3" id="penumpang">
+                  <label for="examplepassword" class="form-label">Jumlah Penumpang</label>
+                  <input type="number" id="jumlahPenumpang" class="form-control" />
+                </div>
+                <div class="col mb-3">
+                  <label for="validationCustom04" class="form-label">Kelas Penerbangan</label>
+                  <select class="form-select" id="kelasPenerbangan" aria-label="Default select example">
+                    <option selected></option>
+                    <option value="Economy">Economy</option>
+                    <option value="Premium">Premium Economy</option>
+                    <option value="Business">Business</option>
+                    <option value="First Class">First Class</option>
+                  </select>
+                </div>
+                <br /><br />
+                <div class="container-fluid text-end">
+                  <button onclick="jadwal()" class="btn, col-md-8 border-0 py-2 px-5" style="background-color: #1285c2; color: white">Pencarian</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---akhir formulir-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="./jadwal.js"></script>
+  </body>
+</html>
