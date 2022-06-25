@@ -78,3 +78,10 @@ const sandi = () => {
     x.type = "password";
   }
 };
+////////
+
+const get1 = () => {
+  const dataJSON = localStorage.getItem("data");
+  innerHTML = "data";
+  document.querySelector("#data akun");
+};

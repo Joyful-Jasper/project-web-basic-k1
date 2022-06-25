@@ -19,7 +19,6 @@ const jadwal = () => {
   console.log(dataJSON);
 
   localStorage.setItem("data", dataJSON);
-  window.location.replace("");
 
   localStorage.setItem("berangkat", berangkatInput);
   localStorage.setItem("tanggalPergi", tanggalPergiInput);
@@ -27,6 +26,8 @@ const jadwal = () => {
   localStorage.setItem("kotaAsal", kotaAsalInput);
   localStorage.setItem("tujuan", tujuanInput);
   localStorage.setItem("kelasPenerbangan", kelasPenerbanganInput);
+
+  window.location.href = "./pencarian/";
 };
 const get = () => {
   const dataJSON = localStorage.getItem("data");
@@ -35,4 +36,9 @@ const get = () => {
 const logout = () => {
   localStorage.setItem("isLogin", false);
   window.location.replace("./masuk.html");
+};
+
+//// akun
+const akun = () => {
+  window.location.replace("./akun.html");
 };
