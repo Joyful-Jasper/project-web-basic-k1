@@ -1,0 +1,43 @@
+.dr-tape {
+  width: 184px;
+  height: 32px;
+  margin: 0px;
+  padding: 0px;
+  border-radius: 8px 0px;
+}
+
+.dr-tape-back {
+  width: 186.5px;
+  height: 48px;
+  margin: 0px;
+  padding: 0px;
+  border-radius: 18px 0px 4px 8px;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.dr-circle-filled {
+  height: 12px;
+  width: 12px;
+  background-color: #333;
+  border-radius: 50%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.dr-circle {
+  height: 12px;
+  width: 12px;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  border: 2px solid #555;
+  margin: 0px;
+  padding: 0px;
+}
+
+.dr-line {
+  width: 100px;
+  height: 2px;
+  background-color: #555;
+  margin: 0px;
+  padding: 0px;
+}
