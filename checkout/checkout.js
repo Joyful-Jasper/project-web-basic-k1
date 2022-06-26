@@ -1,6 +1,3 @@
-import { lazyLoad, getParamsFromUrl, symbols as sym } from '../common.js';
-import { itemData } from '../assets/dummy.js';
-
 const form = document.getElementById("form");
 const firstName = document.getElementById("firstname");
 const lastName = document.getElementById("lastname");
@@ -64,6 +61,8 @@ const checkData = () => {
         return true
     }
 }
+
+let data = getData();
 
 const getData = () => {
     return {firstNameValue : firstName.value.trim(),
