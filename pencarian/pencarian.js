@@ -133,7 +133,7 @@ const loadItemPencarian = (data) => {
     document.querySelector('#pencarian').appendChild(hasilEl);
   };
 
-  Utils.lazyLoad('../components/PencarianItem.html', setPencarian);
+  Utils.lazyLoad('../components/pencarian/PencarianItem.html', setPencarian);
 };
 
 // saring
@@ -177,7 +177,7 @@ const loadItemHasil = (ticketData) => {
   };
 
   // load list hasil
-  Utils.lazyLoad('../components/Hasil.html', setHasil);
+  Utils.lazyLoad('../components/pencarian/Hasil.html', setHasil);
 };
 
 /* load components */
@@ -193,7 +193,7 @@ if (travelerData !== null) {
   loadItemPencarian(travelerData);
 
   // load saring
-  Utils.lazyLoad('../components/Saring.html', setSaring);
+  Utils.lazyLoad('../components/pencarian/Saring.html', setSaring);
 
   // load hasil items
   tickets.forEach((item) => loadItemHasil(item));

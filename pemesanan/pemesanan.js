@@ -40,7 +40,7 @@ const loadPemesanan = (data) => {
     document.querySelector('#pemesananHeader').appendChild(pesanEl);
   };
 
-  Utils.lazyLoad('../components/PemesananHeader.html', setPemesanan);
+  Utils.lazyLoad('../components/pemesanan/PemesananHeader.html', setPemesanan);
 };
 
 // item pemesanan
@@ -50,6 +50,10 @@ const loadPemesananInfo = (data) => {
 
     infoEl.insertAdjacentHTML('beforeEnd', html);
     infoEl.querySelector('#logoMaskapai').src = data.logoMaskapai;
+    infoEl.querySelector('#infoJudulPemesanan').textContent = `
+      ${Utils.cityCodes[data.fromNameCode]} (${data.fromCode})
+      ${Utils.symbols.RIGHT_ARROW}
+      ${Utils.cityCodes[data.destNameCode]} (${data.destCode})`;
     infoEl.querySelector('#nameMaskapai').textContent = data.nameMaskapai;
     infoEl.querySelector('#fromTime').textContent = data.fromTime;
     infoEl.querySelector('#fromCode').textContent = data.fromCode;
@@ -61,7 +65,7 @@ const loadPemesananInfo = (data) => {
     document.querySelector('#pemesananInfo').appendChild(infoEl);
   };
 
-  Utils.lazyLoad('../components/PemesananInfo.html', setPemesananInfo);
+  Utils.lazyLoad('../components/pemesanan/PemesananInfo.html', setPemesananInfo);
 };
 
 // item pemesanan
@@ -96,7 +100,7 @@ const loadPemesananRincian = ({
     document.querySelector('#pemesananRincian').appendChild(rincianEl);
   };
 
-  Utils.lazyLoad('../components/PemesananRincian.html', setPemesananRincian);
+  Utils.lazyLoad('../components/pemesanan/PemesananRincian.html', setPemesananRincian);
 };
 
 /* load components */
