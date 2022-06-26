@@ -3,13 +3,17 @@ const firstName = document.getElementById("firstname");
 const lastName = document.getElementById("lastname");
 const phone = document.getElementById("phone");
 const nik = document.getElementById("nik");
+const gender = document.getElementById("gender");
 
 // event listener
 form.addEventListener("submit", (e) => {
     e.preventDefault();
     checkData();
     if (checkData() === true){
-        window.location.href = "http://google.com";
+        localStorage.setItem(`penumpang`, JSON.stringify(getData()));
+        window.location.href = "../payment-gateway/index.html";
+    } else {
+        localStorage.clear();
     }
 });
 
@@ -62,11 +66,11 @@ const checkData = () => {
     }
 }
 
-let data = getData();
 
 const getData = () => {
     return {firstNameValue : firstName.value.trim(),
             lastNameValue : lastName.value.trim(),
+            genderValue : gender.value,
             phoneValue : phone.value.trim(),
             nikValue : nik.value.trim()}
 

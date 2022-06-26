@@ -58,10 +58,54 @@
         <div class="row">
           <div class="col-xl-8 mt-5">
             <h4>Pembayaran</h4>
-            <div class="col-sm mt-5 container shadow p-3 mb-5 bg-body rounded p-2 br rounded">
-                <img src="https://pngimg.com/uploads/qr_code/qr_code_PNG37.png" class="rounded mx-auto d-block" alt="..." width="200px" height="200px">
+            <div class="col-sm mt-5 container shadow p-3 mb-5 bg-body rounded p-2 br rounded" id="data">
+                <h4>Detail Penumpang</h4>
+                <div class="col mt-3">
+                  <div class="container">
+                    <h6>Nama</h6>
+                    <p id="name"></p>
+                    <h6>Nomor Ponsel</h6>
+                    <p id="phone"></p>
+                    <h6>NIK</h6>
+                    <p id="nik"></p>
+                  </div>
+                  <div class="container">
+                    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalToggleLabel">Validasi</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            Apakah data anda sudah benar ?
+                          </div>
+                          <div class="modal-footer">
+                            <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Lanjutkan Pembayaran</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalToggleLabel2">Bayar</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <img src="https://qris.id/api-doc/assets/img/MPM_QRIS_Dasar.jpg" class="rounded mx-auto d-block" alt="qris">
+                          </div>
+                          <div class="modal-footer">
+                            <button class="btn btn-primary" data-bs-target="#" data-bs-toggle="modal" onclick="bayar()">Bayar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Lanjutkan</a>
+                  </div>
+                </div>
             </div>
-
           </div>
           <div class="col-sm mt-5 container shadow p-3 mb-5 bg-body rounded p-2 br rounded">
             <div class="h4 pb-2 mb-4 border-bottom text-center">
