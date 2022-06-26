@@ -1,15 +1,43 @@
 <div class="container">
-    <div class="row">
-      <div class="col d-flex align-items-center">
-        <h6 class="mx-2">Filter:</h6>
-        <div class="mx-2 btn btn-light text-info" style="border-radius: 24px">
+  <div class="row">
+    <div class="col d-flex align-items-center">
+      <h6 class="mx-2">Filter:</h6>
+      <div class="dropdown">
+        <button
+          class="btn btn-sm btn-light text-info dropdown-toggle"
+          type="button"
+          id="dropdownMenuWaktu"
+          data-bs-toggle="dropdown"
+          data-bs-auto-close="outside"
+          aria-expanded="false"
+          style="border-radius: 24px"
+        >
           Waktu
-          <span id="caretFilterWaktu"><i class="bi bi-caret-down-fill"></i></span>
-        </div>
-        <div class="mx-2 btn btn-light text-info" style="border-radius: 24px">
+        </button>
+        <form class="dropdown-menu p-2">
+          <div id="listDropdownMenuWaktu" class="form-check">
+            <!-- item waktu -->
+          </div>
+        </form>
+      </div>
+      <div class="dropdown">
+        <button
+          class="btn btn-sm btn-light text-info dropdown-toggle"
+          type="button"
+          id="dropdownMenuMaskapai"
+          data-bs-toggle="dropdown"
+          data-bs-auto-close="outside"
+          aria-expanded="false"
+          style="border-radius: 24px"
+        >
           Maskapai
-          <span id="caretFilterMaskapai"></span><i class="bi bi-caret-down-fill"></i></span>
-        </div>
+        </button>
+        <form class="dropdown-menu p-2">
+          <div id="listDropdownMenuMaskapai" class="form-check">
+            <!-- item maskapai -->
+          </div>
+        </form>
       </div>
     </div>
   </div>
+</div>

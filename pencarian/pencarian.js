@@ -50,7 +50,7 @@ const getTickets = (args) => {
     const filteredTickets = tickets.filter((ticket) => (
       ticket.fromNameCode === fromNameCode
       && ticket.destNameCode === destNameCode));
-    console.log(filteredTickets);
+
     return {
       tickets: filteredTickets,
       travelerData: {
@@ -138,8 +138,43 @@ const loadItemPencarian = (data) => {
 
 // saring
 const setSaring = (html) => {
-  document.querySelector('#saring').insertAdjacentHTML('beforeEnd', html);
+  const menuSaring = document.querySelector('#saring');
+  menuSaring.insertAdjacentHTML('beforeEnd', html);
+
+  const menuSaringWaktu = document.createElement('div');
+  menuSaringWaktu.insertAdjacentHTML('beforeEnd', `
+    <input type="checkbox" class="form-check-input" id="ddcWaktu_00.00">
+    <label class="form-check-label" for="ddcWaktu_00.00">
+      00:00
+    </label>
+    <br/>
+    <input type="checkbox" class="form-check-input" id="ddcWaktu_12.00">
+    <label class="form-check-label" for="ddcWaktu_12.00">
+      12:00
+    </label>
+  `);
+
+  const menuSaringMaskapai = document.createElement('div');
+  menuSaringMaskapai.insertAdjacentHTML('beforeEnd', `
+    <input type="checkbox" class="form-check-input" id="ddcMaskapai_Lorem.Ipsum">
+    <label class="form-check-label" for="ddcMaskapai_Lorem.Ipsum">
+      Lorem Ipsum
+    </label>
+    <br/>
+    <input type="checkbox" class="form-check-input" id="ddcMaskapai_Ipsum.Lorem">
+    <label class="form-check-label" for="ddcMaskapai_Ipsum.Lorem">
+      Ipsum Lorem
+    </label>
+  `);
+
+  menuSaring
+    .querySelector('#listDropdownMenuWaktu')
+    .insertAdjacentElement('beforeEnd', menuSaringWaktu);
+  menuSaring
+    .querySelector('#listDropdownMenuMaskapai')
+    .insertAdjacentElement('beforeEnd', menuSaringMaskapai);
 };
+
 // list hasil
 const loadItemHasil = (ticketData) => {
   const setHasil = (html) => {
