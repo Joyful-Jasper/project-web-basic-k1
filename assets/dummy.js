@@ -1,6 +1,6 @@
-const itemData = [
+const ticketsData = [
   {
-    id: 'booking-abcd123',
+    id: 'tix-abcd123',
     logoMaskapai: 'https://placekitten.com/24/24',
     nameMaskapai: 'Lorem Ipsum',
     fromName: 'Jakarta',
@@ -13,22 +13,39 @@ const itemData = [
     destNameCode: 'SUB',
     destCode: 'ZYX',
     destTime: '21:00',
-    date: 'Rabu, 22 Juni 2022',
-    passenger: {
-      adult: 1,
-      child: 1,
-      infant: 1,
-    },
+    depart: 'Rabu, 22 Juni 2022',
     seatClass: 'Ekonomi',
-    pricePerTix: 'Rp. 123.456/org',
+    pricePerTix: 123_456,
+    prices: [
+      {
+        id: 0,
+        name: 'adult',
+        price: 123_456,
+      },
+      {
+        id: 1,
+        name: 'child',
+        price: 123_456,
+      },
+      {
+        id: 2,
+        name: 'infant',
+        price: 123_456 * 0.2,
+      },
+      {
+        id: 3,
+        name: 'Free protection',
+        price: 'Free',
+      },
+    ],
   },
   {
-    id: 'booking-xyz987',
+    id: 'tix-xyz987',
     logoMaskapai: 'https://placekitten.com/24/24',
     nameMaskapai: 'Lorem Ipsum',
     fromName: 'Bandung',
     fromNameCode: 'BDG',
-    fromCode: 'CBA',
+    fromCode: 'BAC',
     fromTime: '10:00',
     estTime: '1h 21m',
     transferCount: 'Langsung',
@@ -36,15 +53,33 @@ const itemData = [
     destNameCode: 'MLG',
     destCode: 'ZYX',
     destTime: '12:21',
-    date: 'Kamis, 23 Juni 2022',
-    passenger: {
-      adult: 1,
-      child: 0,
-      infant: 0,
-    },
+    depart: 'Kamis, 23 Juni 2022',
     seatClass: 'Ekonomi',
-    pricePerTix: 'Rp. 100.900/org',
+    pricePerTix: 100_900,
+    prices: [
+      {
+        id: 0,
+        name: 'adult',
+        price: 100_900,
+      },
+      {
+        id: 1,
+        name: 'child',
+        price: 100_900,
+      },
+      {
+        id: 2,
+        name: 'infant',
+        price: 100_900 * 0.2,
+      },
+      {
+        id: 3,
+        name: 'Free protection',
+        price: 'Free',
+      },
+    ],
   }
 ];
 
-export { itemData };
+
+export { ticketsData };
