@@ -1,3 +1,15 @@
 .form-control {
-  font-size: 25px;
+  font-size: 20px;
+}
+.form-label {
+  font-size: 20px;
+}
+.link {
+  font-size: 20px;
+}
+#jadwal {
+  font-size: 20px;
+}
+.form-select {
+  font-size: 20px;
 }
