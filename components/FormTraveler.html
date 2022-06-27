@@ -1,0 +1,76 @@
+<!-- form -->
+<div class="container">
+  <div class="row">
+    <div class="col-xl-8 mt-5">
+      <h4>Data Traveler</h4>
+      <form class="shadow p-3 mb-5 bg-body rounded p-2 br rounded" id="form">
+        <div class="row">
+          <div class="col-6 mb-2">
+            <label class="form-label" for="firstname">Nama depan</label>
+            <input class="form-control" type="text" id="firstname" />
+            <div id="firstnameFeedback" class="invalid-feedback">Mohon masukan nama depan sesuai KTP.</div>
+            <div class="valid-feedback"></div>
+          </div>
+          <div class="col-6 mb-2">
+            <label class="form-label" for="lastname">Nama belakang</label>
+            <input class="form-control" type="text" id="lastname" />
+            <div id="lastnameFeedback" class="invalid-feedback">Mohon masukan nama belakang sesuai KTP.</div>
+          </div>
+          <div class="col-auto mb-2">
+            <label for="gender" class="form-label">Jenis kelamin</label>
+            <select id="gender" class="form-select">
+              <option selected>Pria</option>
+              <option>Wanita</option>
+            </select>
+          </div>
+          <div class="col-12 mb-2">
+            <label class="form-label" for="phone">Nomor Handphone</label>
+            <div class="input-group">
+              <span class="input-group-text">+62</span>
+              <input type="number" id="phone" class="form-control" />
+              <div id="phoneFeedback" class="invalid-feedback">Mohon masukan nomor ponsel yang valid.</div>
+            </div>
+          </div>
+          <div class="col-12 mb-2">
+            <label class="form-label" for="nik">NIK</label>
+            <input type="number" id="nik" class="form-control" />
+            <div id="nikFeedback" class="invalid-feedback">Mohon masukan nomor NIK sesuai KTP.</div>
+          </div>
+        </div>
+        <div class="col-auto">
+          <div class="d-grid mt-2">
+            <button class="btn btn-primary" type="submit">Lanjutkan</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="col-sm mt-5 container shadow p-3 mb-5 bg-body rounded p-2 br rounded">
+      <div class="h4 pb-2 mb-4 border-bottom text-center">Detail Perjalanan</div>
+      <div class="row">
+        <div class="col text-center d-flex align-items-center">
+          <div class="container p-0">
+            <div id="fromTime">17:30</div>
+            <div id="fromCode" class="btn btn-light" style="border-radius: 24px">CGK</div>
+          </div>
+        </div>
+        <div class="col text-center d-flex align-items-center">
+          <div class="container p-0">
+            <div id="estTime">2h 30m</div>
+            <div class="d-flex align-items-center justify-content-center m-0">
+              <div class="dr-circle align-self-start"></div>
+              <div class="dr-line flex-grow-1"></div>
+              <div class="dr-circle-filled align-self-end"></div>
+            </div>
+            <div id="transferCount">Langsung</div>
+          </div>
+        </div>
+        <div class="col text-center d-flex align-items-center">
+          <div class="container p-0">
+            <div id="destTime">19:00</div>
+            <div id="destCode" class="btn btn-light" style="border-radius: 24px">SUB</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,78 @@
+<div class="container">
+  <div class="card" style="border-radius: 16px">
+    <div id="jadwal" class="card-body text-center text-md-start">
+      <div class="container">
+        <div class="row">
+          <div class="col col-md-6">
+            <div class="row mb-3">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="berangkat" checked />
+                <label class="form-check-label" for="flexRadioDefault1"> Keberangkatan </label>
+              </div>
+            </div>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col mb-3">
+                  <label for="validationCustom04" class="form-label">Dari</label>
+                  <select class="form-select" id="kotaAsal" aria-label="Default select example">
+                    <option selected>kota asal</option>
+                    <option value="JKTA">Jakarta</option>
+                    <option value="BDG">Bandung</option>
+                    <option value="SOL">Solo</option>
+                    <option value="YGT">yogyakarta</option>
+                    <option value="BAL">Bali</option>
+                    <option value="PLB">Palembang</option>
+                    <option value="PUA">Papua</option>
+                    <option value="NTT">Nusa Tenggara Timur</option>
+                  </select>
+                </div>
+                <div class="col mb-3">
+                  <label for="validationCustom04" class="form-label">Ke</label>
+                  <select class="form-select" id="tujuan" aria-label="Default select example">
+                    <option selected>kota tujuan</option>
+                    <option value="JKTA">Jakarta</option>
+                    <option value="BDG">Bandung</option>
+                    <option value="SOL">Solo</option>
+                    <option value="YGT">yogyakarta</option>
+                    <option value="BAL">Bali</option>
+                    <option value="PLB">Palembang</option>
+                    <option value="PUA">Papua</option>
+                    <option value="NTT">Nusa Tenggara Timur</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-3">
+              <label for="exampletanggal" class="form-label">Tanggal Pergi</label>
+              <input type="date" id="tanggalPergi" class="form-control" />
+            </div>
+          </div>
+          <div class="col col-md-6">
+            <div class="row">
+              <div class="col mb-3" id="penumpang">
+                <label for="examplepassword" class="form-label">Jumlah Penumpang</label>
+                <input type="number" id="jumlahPenumpang" class="form-control" />
+              </div>
+              <div class="col mb-3">
+                <label for="validationCustom04" class="form-label">Kelas Penerbangan</label>
+                <select class="form-select" id="kelasPenerbangan" aria-label="Default select example">
+                  <option selected></option>
+                  <option value="ECONOMY">Economy</option>
+                  <option value="PREMIUM">Premium Economy</option>
+                  <option value="BUSINESS">Business</option>
+                  <option value="FIRST_CLASS">First Class</option>
+                </select>
+              </div>
+              <br /><br />
+              <div class="container text-end mt-3">
+                <button id="searchTicket" class="btn border-0" style="background-color: #1285c2; color: white">
+                  Pencarian
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
